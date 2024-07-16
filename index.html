@@ -15,10 +15,18 @@
     <input type="date" id="fecha">
 
     <a href="javascript:genPDF()">Crear pdf</a>
+    
+    <div id="output"></div>
+
     <script type="text/javascript" src="jspdf.min.js"></script>
     <script type="text/javascript">
-        function genPDF(){
-            var doc=new jsPDF();
+
+        
+function genPDF() {
+        var doc = new jsPDF();
+
+        // Obtener el mensaje del elemento con ID 'textoEscrito'
+        let mensaje = document.getElementById('textoEscrito').value;
 
         // Obtener la fecha seleccionada del elemento con ID 'fecha'
         let fechaSeleccionada = document.getElementById('fecha').value;
@@ -30,15 +38,24 @@
         let partesFecha = fechaSeleccionada.split('-');
         let fechaFormateada = partesFecha[2] + '/' + partesFecha[1] + '/' + partesFecha[0];
 
+        // Añadir el mensaje y la fecha al PDF
+        doc.text(20, 20, mensaje);
+        doc.text(20, 30, 'Fecha: ' + fechaFormateada);
 
-            let mensaje=document.getElementById('textoEscrito').value;
-            doc.text(20,20,mensaje);
-            doc.text(20, 30, 'Fecha: ' + fechaFormateada);
-            doc.addPage();
+        // Añadir una nueva página y un mensaje adicional
+        doc.addPage();
+        doc.text(20, 20, 'Mi trabajo!!');
+        
+        // Agregar un párrafo al DOM con la información
+        let outputDiv = document.getElementById('output');
+        let nuevoParrafo = document.createElement('p');
+        nuevoParrafo.textContent = `Mensaje: ${mensaje} - Fecha: ${fechaFormateada}`;
+        outputDiv.appendChild(nuevoParrafo);
 
-            doc.text(20,40,'Mi trabajo!!');
-            doc.save('Test.pdf');
-        }
+        // Guardar el PDF
+        doc.save('Test.pdf');
+
+    }
     </script>
 </body>
 </html>
