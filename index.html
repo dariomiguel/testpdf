@@ -11,17 +11,31 @@
     <h1>Crear Archivos PDF</h1>
     <br>
     
-    <input type="text" placeholder="Escribeme" id="esc"><br><br>
+    <input type="text" placeholder="Escribeme" id="textoEscrito"><br><br>
 
     <a href="javascript:genPDF()">Crear pdf</a>
     <script type="text/javascript" src="jspdf.min.js"></script>
     <script type="text/javascript">
         function genPDF(){
             var doc=new jsPDF();
-            let mensaje=document.getElementById('esc').value;
+
+        // Obtener la fecha seleccionada del elemento con ID 'fecha'
+        let fechaSeleccionada = document.getElementById('fecha').value;
+        if (!fechaSeleccionada) {
+            alert("Por favor, selecciona una fecha.");
+            return;
+        }
+        // Formatear la fecha seleccionada (yyyy-mm-dd a dd/mm/yyyy)
+        let partesFecha = fechaSeleccionada.split('-');
+        let fechaFormateada = partesFecha[2] + '/' + partesFecha[1] + '/' + partesFecha[0];
+
+
+            let mensaje=document.getElementById('textoEscrito').value;
             doc.text(20,20,mensaje);
+            doc.text(20, 30, 'Fecha: ' + fechaFormateada);
             doc.addPage();
-            doc.text(20,20,'Mi trabajo!!');
+
+            doc.text(20,40,'Mi trabajo!!');
             doc.save('Test.pdf');
         }
     </script>
