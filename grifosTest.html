@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grifos de la Planta Frigorífica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .grifos-container {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Bienvenido a la Página 2</h1>
+<p>Esta es la segunda página de tu sitio web.</p>
+
+<!-- Enlace para regresar a la primera página -->
+<a href="index.html">Ir a la Página 1</a>
+
+
+<h2>Grifos de la Planta Frigorífica</h2>
+<div id="grifos-container">
+    <!-- Los grifos se generarán aquí -->
+</div>
+
+<script type="text/javascript">
+    // Cargar el archivo JSON y generar la interfaz
+    fetch('grifos.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('grifos-container');
+            
+            data.forEach(grifo => {
+                const div = document.createElement('div');
+                div.className = 'grifo';
+                div.innerHTML = `
+                    <h3>Sector: ${grifo.sector}</h3>
+                    <p>Tipo: ${grifo.tipo}</p>
+                    <p>Nombre: ${grifo.nombre}</p>
+                `;
+                container.appendChild(div);
+            });
+        });
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,1346 @@
+[
+    {
+        "sector": "planta baja",
+        "número de grifo": null,
+        "registro\ngestión de grifos\nubicación del grifo": null,
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "1",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos bajada animales",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "2",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos cepo",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "3",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos cepo ue",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "4",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos vestuario",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "5",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos digestor",
+        "estado (*)": "10/5/24 rodillera de grifo rota",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "6",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos necropsia",
+        "estado (*)": "3/5/2024 jabonera rota/ lava botas no funciona",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "10",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos playa de emergencia/esterilizador",
+        "estado (*)": "3/5/2024 funciona continuo(no corta)",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "11",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos playa de emergencia/esterilizador",
+        "estado (*)": "3/5/2024 desague tapado",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "12",
+        "registro\ngestión de grifos\nubicación del grifo": "pico - playa de emergencia",
+        "estado (*)": "3/1/24 alambres con oxido 9/2/2024 28/3/2024- 12/04/24//3/5/24",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "13",
+        "registro\ngestión de grifos\nubicación del grifo": "pico - playa de emergencia",
+        "estado (*)": "3/5/2024 presencia de oxido",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "14",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos playa de emergencia/ esterilizador",
+        "estado (*)": "3/5/2024 perida de agua, no funciona rodillera",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "mondongueria",
+        "número de grifo": "34",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos-filtro sanitario",
+        "estado (*)": "3/5/2024 falta cepillo y cadena",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "despacho menudencias",
+        "número de grifo": "35",
+        "registro\ngestión de grifos\nubicación del grifo": "pico - sala/alimentación de bateas y duchas",
+        "estado (*)": "3/5/2024 presencia de oxido",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "despacho menudencias",
+        "número de grifo": "36",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos /esterilizador",
+        "estado (*)": "12/4/2024 jabonera rota",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "despacho menudencias",
+        "número de grifo": "37",
+        "registro\ngestión de grifos\nubicación del grifo": "pico - sala",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "mondongueria",
+        "número de grifo": "38",
+        "registro\ngestión de grifos\nubicación del grifo": "pico - sala",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "mondongueria",
+        "número de grifo": "39",
+        "registro\ngestión de grifos\nubicación del grifo": "pico - sala",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "mondongueria",
+        "número de grifo": "40",
+        "registro\ngestión de grifos\nubicación del grifo": "pico - sala/ alimentación de cocinas",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "despacho menudencias",
+        "número de grifo": "41",
+        "registro\ngestión de grifos\nubicación del grifo": "pico-dock carga",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "triperia",
+        "número de grifo": "42",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos -filtro sanitario",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "triperia",
+        "número de grifo": "43",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos-filtro sanitario",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "triperia",
+        "número de grifo": "44",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos-sector",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "triperia",
+        "número de grifo": "45",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos -sector/ alimentación de duchas de toda la línea",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "triperia",
+        "número de grifo": "46",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos-sector",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "vestuario senasa",
+        "número de grifo": "47",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos-baño",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena vestuario",
+        "número de grifo": "48",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos -filtro sanitario baño",
+        "estado (*)": "3/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": null,
+        "número de grifo": "49",
+        "registro\ngestión de grifos\nubicación del grifo": "libre",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "faena vestuario",
+        "número de grifo": "50",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos-baño zona intermedia",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "comedor",
+        "número de grifo": "51",
+        "registro\ngestión de grifos\nubicación del grifo": "lavadero-cocina",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "comedor",
+        "número de grifo": "52",
+        "registro\ngestión de grifos\nubicación del grifo": "lavadero-cocina",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "comedor",
+        "número de grifo": "53",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos-baño privado",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "lavadero",
+        "número de grifo": "54",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena zona sucia",
+        "número de grifo": "56",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos filtro noqueo kosher",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena zona sucia",
+        "número de grifo": "57",
+        "registro\ngestión de grifos\nubicación del grifo": "pico - noqueo kosher",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "vestuario kosher",
+        "número de grifo": "58",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos baño vestuario kosher",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "vestuario kosher",
+        "número de grifo": "59",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "depósito de sal",
+        "número de grifo": "60",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena zona sucia",
+        "número de grifo": "61",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco noqueo kosher/ esterilizador",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena zona sucia",
+        "número de grifo": "62",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos maneador",
+        "estado (*)": "10/5/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "63",
+        "registro\ngestión de grifos\nubicación del grifo": "piletas bebederos 1-17-18",
+        "estado (*)": "3/1/24 presencia de oxido 9/2/2024 28/3/2024-11/4/2024-3/5/24",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "65",
+        "registro\ngestión de grifos\nubicación del grifo": "picos-corrales",
+        "estado (*)": "3/5/24 presencia de oxido",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "roldanas",
+        "número de grifo": "67",
+        "registro\ngestión de grifos\nubicación del grifo": "pico roldanas",
+        "estado (*)": "3/1/2024 presencia de oxido 9/2/2024 28/3/2024-11/4/2024/3/5/24",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "corrales",
+        "número de grifo": "78",
+        "registro\ngestión de grifos\nubicación del grifo": "pico lavado",
+        "estado (*)": "3/1/24 presencia de oxido 9/2/2024 28/3/2024-11/4/2024..3/5/24",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "primer piso",
+        "número de grifo": null,
+        "registro\ngestión de grifos\nubicación del grifo": null,
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "100",
+        "registro\ngestión de grifos\nubicación del grifo": "corta pata / manos lavamanos/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "101",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos inspección veterinaria (tendones)/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "102",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos garreo manos/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "103",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco garreo patas/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "104",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco garreo patas/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "105",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco berija/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "106",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco berija/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "107",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco corta patas/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "108",
+        "registro\ngestión de grifos\nubicación del grifo": "pico zona garreo (limpieza)",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "109",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos matambrero/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "110",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos matambrero/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "111",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos desollador/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "112",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos atado de culata/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "113",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos gancho de culata/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "114",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos cuereado de cabeza/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "115",
+        "registro\ngestión de grifos\nubicación del grifo": "registro\npico zona cuereado (limpieza)",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "116",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos brazuelo/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral               2"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "117",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos zona de cogotes (alternativo)/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "118",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos cogotero/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "119",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos dentición",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "120",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos bajada cuero/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "121",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos desnucado/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "121 a",
+        "registro\ngestión de grifos\nubicación del grifo": "esterilizador desnucado",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "122",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos tirabuzón/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "123",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos sierra de pecho/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "124",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos colgado de cabeza/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "125",
+        "registro\ngestión de grifos\nubicación del grifo": "pico ducha lavado ganchos",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "126",
+        "registro\ngestión de grifos\nubicación del grifo": "pico lavado cabeza+lengua/ esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "127",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos lengua/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "128",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos inspeccion hígado/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "129",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos revisión de galglios/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "130",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos insp.veterinaria-bandeja de vísceras/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "131",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos insp.veterinaria-bandeja de vísceras/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "132",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos insp.veterinaria-bandeja de vísceras/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "133",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos despanzado/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "134",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos despanzado/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "135",
+        "registro\ngestión de grifos\nubicación del grifo": "pico zona intermedia (limpieza)",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "136",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos zona intermedia (alternativo)",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "137",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco sierra medias",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "138",
+        "registro\ngestión de grifos\nubicación del grifo": "ducha lavado sierra medias/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "139",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos pelado de entraña/ esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "140",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos vacuna y ganglios/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "141",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos ganglio,matambre y cadera/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "142",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos extracción de rabo y riñon/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "143",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos remoción de sebos/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "144",
+        "registro\ngestión de grifos\nubicación del grifo": "pico (limpieza)",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "145",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco de médula/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "146",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos pcc (opcional)/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "147",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos pcc 1 alto/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "148",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos pcc 1 bajo/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "149",
+        "registro\ngestión de grifos\nubicación del grifo": "pico lavado medias",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "150",
+        "registro\ngestión de grifos\nubicación del grifo": "pico lavado medias",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "151",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos reinspeccion/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "152",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos reinspeccion/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "153",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos reinspeccion/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "154",
+        "registro\ngestión de grifos\nubicación del grifo": "esterilizador/cabina de acido lactico",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "155",
+        "registro\ngestión de grifos\nubicación del grifo": "esterilizador/pico lavado carros",
+        "estado (*)": "18/4/2024 presencia de oxido",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "156",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos filtro digestores",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "157",
+        "registro\ngestión de grifos\nubicación del grifo": "esterilizador/ zona de reinspección (limpieza)",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "158",
+        "registro\ngestión de grifos\nubicación del grifo": "pico digestor faena",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "159",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos digestor faena",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "160",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco tipificacion",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "161",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos balanza-etiquetado/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "162",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos y esterilizador cabina de acido lactico",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "cámaras",
+        "número de grifo": "163",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos filtro sanitario camaras/esterilizador",
+        "estado (*)": "18/4/24 sin funcionar en general",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "cámaras",
+        "número de grifo": "164",
+        "registro\ngestión de grifos\nubicación del grifo": "pico camaras",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "cámaras",
+        "número de grifo": "165",
+        "registro\ngestión de grifos\nubicación del grifo": "pico camaras",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "166",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos atado culata/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "167",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos  lavado de cabezas",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "168",
+        "registro\ngestión de grifos\nubicación del grifo": "pico lavado de bandejas",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "169",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos inspeccion veterinaria/esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "menudencias rojas",
+        "número de grifo": "170",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos lado izquierdo de noria /esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "menudencias rojas",
+        "número de grifo": "171",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos riñón",
+        "estado (*)": "22/3/2024 jabonera rota 18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "menudencias rojas",
+        "número de grifo": "172",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos lado derecho noria /esterilizador",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "menudencias rojas",
+        "número de grifo": "173",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos extracción de quijada/esterilizador",
+        "estado (*)": "18/4/2024 cambiar cepillo",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "menudencias rojas",
+        "número de grifo": "174",
+        "registro\ngestión de grifos\nubicación del grifo": "esterilizador (limpieza)",
+        "estado (*)": "18/4/2024 presencia de oxido",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "menudencias rojas",
+        "número de grifo": "175",
+        "registro\ngestión de grifos\nubicación del grifo": "esterilizador",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "pasillo",
+        "número de grifo": "176",
+        "registro\ngestión de grifos\nubicación del grifo": "pico (limpieza)",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "afiladero faena",
+        "número de grifo": "177",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos afilareo",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "pasillo",
+        "número de grifo": "178",
+        "registro\ngestión de grifos\nubicación del grifo": "registro\npico (limpieza)",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "filtro faena zona interm.",
+        "número de grifo": "179",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos ingreso a faena",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual                   3"
+    },
+    {
+        "sector": "filtro principal",
+        "número de grifo": "180",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "vestuario despostada caballeros",
+        "número de grifo": "181",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "vestuario despostada",
+        "número de grifo": "182",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "vestuario despostada",
+        "número de grifo": "183",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "enfermeria",
+        "número de grifo": "184",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos entrada",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "enfermeria",
+        "número de grifo": "185",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos consultorio",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "enfermeria",
+        "número de grifo": "186",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos baño",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "sistemas baño",
+        "número de grifo": "187",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos baño",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "188",
+        "registro\ngestión de grifos\nubicación del grifo": "pico cabina lavado de cabezas y lengua",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "189",
+        "registro\ngestión de grifos\nubicación del grifo": "pico lavamanos puesto de caravanas",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "190",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos rajada de pecho/esterilizador",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "191",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos desollador/esterilizador",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "192",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos empaque primario menudencias",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "193",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos empaque secundrio menudencias/esterilizador",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "194",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos cuereado de cabeza/esterilizador",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "faena",
+        "número de grifo": "195",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos vacuna y ganglios/esterilizador",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "vestuario despostada\ndamas",
+        "número de grifo": "196",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos de ingreso a vestuario",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "saladero de menudencias",
+        "número de grifo": "197",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos de menudencias rojas",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "menudencias rojas",
+        "número de grifo": "198",
+        "registro\ngestión de grifos\nubicación del grifo": "pico lavadero de canastos",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": null,
+        "número de grifo": null,
+        "registro\ngestión de grifos\nubicación del grifo": null,
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "cuarteo",
+        "número de grifo": "200",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos filtro sanitario",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "cuarteo",
+        "número de grifo": "201",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco  /esterilizador",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "cuarteo",
+        "número de grifo": "202",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos principal",
+        "estado (*)": "|",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "pasillo de cuarteo",
+        "número de grifo": "203",
+        "registro\ngestión de grifos\nubicación del grifo": "pico cámaras",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "depósito de insumos",
+        "número de grifo": "204",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos filtro sanitario",
+        "estado (*)": "18/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "cuarteo",
+        "número de grifo": "205",
+        "registro\ngestión de grifos\nubicación del grifo": "esterilizador",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "depósito de insumos",
+        "número de grifo": "206",
+        "registro\ngestión de grifos\nubicación del grifo": "pico alimentacion para limpieza",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "300",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos filtro sanitario",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "301",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos  pared charqueo asado/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "302",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos  pared charqueo asado/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "303",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos  pared charqueo calado asado/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "304",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco desposte /esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "305",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco desposte /esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "306",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco desposte/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "307",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco desposte/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "308",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco desposte/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "309",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco desposte/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "310",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos sala de afilado/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "311",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco dressing/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "312",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco desposte/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "313",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos pared charqueo/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "314",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos pared charqueo/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "315",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos pared charqueo/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "316",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos pared charqueo/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "317",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos pared charqueo/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "318",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos central charqueo /esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "319",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos central charqueo /esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "320",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos central charqueo /esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "321",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos central charqueo /esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "322",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos reinspección veterinaria/esterilizador",
+        "estado (*)": "26/4/2024 no funciona es urgente",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "323",
+        "registro\ngestión de grifos\nubicación del grifo": "pico bajada agua sala de afilado",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "324",
+        "registro\ngestión de grifos\nubicación del grifo": "pico agua reinspección veterinaria",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "325",
+        "registro\ngestión de grifos\nubicación del grifo": "pico bajada agua escalera",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "326",
+        "registro\ngestión de grifos\nubicación del grifo": "pico bajada agua saladero",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "saladero",
+        "número de grifo": "327",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos ingreso",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "anual"
+    },
+    {
+        "sector": "saladero",
+        "número de grifo": "328",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos palco/esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "semestral"
+    },
+    {
+        "sector": "saladero",
+        "número de grifo": "329",
+        "registro\ngestión de grifos\nubicación del grifo": "registro\npico alimentación piletas de lavado y duchas",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "saladero",
+        "número de grifo": "330",
+        "registro\ngestión de grifos\nubicación del grifo": "pico alimentación piletas de remojo",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral               4"
+    },
+    {
+        "sector": "saladero",
+        "número de grifo": "331",
+        "registro\ngestión de grifos\nubicación del grifo": "pico alimentacion para limpieza",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "depósito de insumos",
+        "número de grifo": "332",
+        "registro\ngestión de grifos\nubicación del grifo": "libre",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "despostada",
+        "número de grifo": "333",
+        "registro\ngestión de grifos\nubicación del grifo": "lavamanos frente a puesto de pesaje /esterilizador",
+        "estado (*)": "26/4/2024",
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": "trimestral"
+    },
+    {
+        "sector": "empaque secundario",
+        "número de grifo": "334",
+        "registro\ngestión de grifos\nubicación del grifo": "pico limpieza empaque secundario",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "empaque secundario",
+        "número de grifo": "335",
+        "registro\ngestión de grifos\nubicación del grifo": "pico limpieza empaque secundario",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "saladero",
+        "número de grifo": "336",
+        "registro\ngestión de grifos\nubicación del grifo": "pico pileta remojo",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "saladero",
+        "número de grifo": "337",
+        "registro\ngestión de grifos\nubicación del grifo": "pico limpieza",
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    },
+    {
+        "sector": "observaciones:",
+        "número de grifo": null,
+        "registro\ngestión de grifos\nubicación del grifo": null,
+        "estado (*)": null,
+        "código: re-ca\nemisión:  22/05\nrevisió\nfrecuencia de muestrepáogina 1\n(según re-lab-03)": null
+    }
+]
