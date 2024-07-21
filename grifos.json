@@ -1,12 +1,5 @@
 [
     {
-        "sector": "planta baja",
-        "numeroDeGrifo": null,
-        "ubicacionDelGrifo": null,
-        "estado": null,
-        "frecuenciaDeMuestreo": null
-    },
-    {
         "sector": "corrales",
         "numeroDeGrifo": "1",
         "ubicacionDelGrifo": "lavamanos bajada animales",
@@ -189,13 +182,6 @@
         "frecuenciaDeMuestreo": "anual"
     },
     {
-        "sector": null,
-        "numeroDeGrifo": "49",
-        "ubicacionDelGrifo": "libre",
-        "estado": null,
-        "frecuenciaDeMuestreo": null
-    },
-    {
         "sector": "faena vestuario",
         "numeroDeGrifo": "50",
         "ubicacionDelGrifo": "lavamanos-baño zona intermedia",
@@ -305,13 +291,6 @@
         "numeroDeGrifo": "78",
         "ubicacionDelGrifo": "pico lavado",
         "estado": "3/1/24 presencia de oxido 9/2/2024 28/3/2024-11/4/2024..3/5/24",
-        "frecuenciaDeMuestreo": null
-    },
-    {
-        "sector": "primer piso",
-        "numeroDeGrifo": null,
-        "ubicacionDelGrifo": null,
-        "estado": null,
         "frecuenciaDeMuestreo": null
     },
     {
@@ -1015,13 +994,6 @@
         "frecuenciaDeMuestreo": null
     },
     {
-        "sector": null,
-        "numeroDeGrifo": null,
-        "ubicacionDelGrifo": null,
-        "estado": "18/4/2024",
-        "frecuenciaDeMuestreo": null
-    },
-    {
         "sector": "cuarteo",
         "numeroDeGrifo": "200",
         "ubicacionDelGrifo": "lavamanos filtro sanitario",
@@ -1333,13 +1305,6 @@
         "sector": "saladero",
         "numeroDeGrifo": "337",
         "ubicacionDelGrifo": "pico limpieza",
-        "estado": null,
-        "frecuenciaDeMuestreo": null
-    },
-    {
-        "sector": "observaciones:",
-        "numeroDeGrifo": null,
-        "ubicacionDelGrifo": null,
         "estado": null,
         "frecuenciaDeMuestreo": null
     }

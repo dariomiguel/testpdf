@@ -1,40 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Grifos de la Planta Frigorífica</title>
+    <title>Grifos en Planta</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
         .grifos-container {
             margin-top: 10px;
+        }
+        .filtros {
+            margin-bottom: 20px;
+        }
+        .filtro-label {
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
+    <h1>Grifos en Planta</h1>
+    <a href="index.html">Ir al inicio</a>
 
-<h1>Bienvenido a la Página 2</h1>
-<p>Esta es la segunda página de tu sitio web.</p>
+    <h2>Grifos de la Planta Frigorífica</h2>
 
-<!-- Enlace para regresar a la primera página -->
-<a href="index.html">Ir a la Página 1</a>
+    <div class="filtros" id="filtros-container">
+        <!-- Los filtros se generarán aquí -->
+    </div>
 
+    <div id="grifos-container">
+        <!-- Los grifos se generarán aquí -->
+    </div>
 
-<h2>Grifos de la Planta Frigorífica</h2>
-<div id="grifos-container">
-    <!-- Los grifos se generarán aquí -->
-</div>
+    <script type="text/javascript">
+        let grifosData = [];
 
-<script type="text/javascript">
-    // Cargar el archivo JSON y generar la interfaz
-    fetch('grifos.json')
-        .then(response => response.json())
-        .then(data => {
-            const container = document.getElementById('grifos-container');
-            
-            data.forEach(grifo => {
-                const div = document.createElement('div');
-                div.className = 'grifo';
+        // Cargar el archivo JSON y generar la interfaz
+        fetch("grifos.json")
+            .then((response) => response.json())
+            .then((data) => {
+                grifosData = data;
+                const sectores = [...new Set(data.map(grifo => grifo.sector))];
+                generarFiltros(sectores);
+                mostrarGrifos(data);
+            });
+
+        function generarFiltros(sectores) {
+            const filtrosContainer = document.getElementById("filtros-container");
+
+            sectores.forEach((sector) => {
+                const label = document.createElement("label");
+                label.className = "filtro-label";
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                checkbox.value = sector;
+                checkbox.onchange = filtrarGrifos;
+
+                label.appendChild(checkbox);
+                label.appendChild(document.createTextNode(sector));
+                filtrosContainer.appendChild(label);
+            });
+        }
+
+        function filtrarGrifos() {
+            const checkboxes = document.querySelectorAll(".filtros input[type='checkbox']");
+            const sectoresSeleccionados = [...checkboxes].filter(checkbox => checkbox.checked).map(checkbox => checkbox.value);
+
+            if (sectoresSeleccionados.length === 0) {
+                mostrarGrifos(grifosData);
+            } else {
+                const grifosFiltrados = grifosData.filter(grifo => sectoresSeleccionados.includes(grifo.sector));
+                mostrarGrifos(grifosFiltrados);
+            }
+        }
+
+        function mostrarGrifos(grifos) {
+            const container = document.getElementById("grifos-container");
+            container.innerHTML = ''; // Limpiar el contenedor antes de agregar los elementos
+
+            grifos.forEach((grifo) => {
+                const div = document.createElement("div");
+                div.className = "grifo";
                 div.innerHTML = `
                     <h3>Sector: ${grifo.sector}</h3>
                     <p>Ubicación: ${grifo.ubicacionDelGrifo}</p>
@@ -42,10 +84,7 @@
                 `;
                 container.appendChild(div);
             });
-        });
-</script>
-
+        }
+    </script>
 </body>
-
-
 </html>
