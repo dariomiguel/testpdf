@@ -55,6 +55,33 @@
         <h2>Lista de Actividades</h2>
         <ul id="lista-actividades"></ul>
 
+
+
+
+        <button onclick="generateRandomOrder()">Generar orden aleatorio</button>
+        <div id="output"></div>
+        
+        
+        <h2>Seleccionar Horario</h2>
+        
+        <label for="hour">Hora:</label>
+        <select id="hour"></select>
+        
+        <label for="minute">Minuto:</label>
+        <select id="minute"></select>
+        
+        <p>Horario seleccionado: <span id="selected-time"></span></p>
+        
+        <button onclick="showSelectedTime()">Mostrar Horario Seleccionado</button>
+
+
+
+
+
+
+
+
+
         <script type="text/javascript">
             function generateHourOptions() {
                 let options = "";
@@ -197,6 +224,93 @@
 
                 // Guardar el PDF
                 doc.save("Test.pdf");
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+            // Función para generar las opciones de hora
+            function generateHourOptions() {
+                let hourSelect = document.getElementById("hour");
+                for (let i = 0; i < 24; i++) {
+                    let option = document.createElement("option");
+                    option.value = i;
+                    option.textContent = i.toString().padStart(2, "0");
+                    hourSelect.appendChild(option);
+                }
+            }
+
+            // Función para generar las opciones de minuto
+            function generateMinuteOptions() {
+                let minuteSelect = document.getElementById("minute");
+                for (let i = 0; i < 60; i += 5) {
+                    // Incremento de 5 minutos
+                    let option = document.createElement("option");
+                    option.value = i;
+                    option.textContent = i.toString().padStart(2, "0");
+                    minuteSelect.appendChild(option);
+                }
+            }
+
+            // Llamar a las funciones para generar las opciones al cargar la página
+            generateHourOptions();
+            generateMinuteOptions();
+
+            // Función para mostrar el horario seleccionado
+            function showSelectedTime() {
+                let hour = document.getElementById("hour").value;
+                let minute = document.getElementById("minute").value;
+                document.getElementById("selected-time").textContent =
+                    hour + ":" + minute;
+            }
+        </script>
+
+        <script type="text/javascript">
+            function generateRandomOrder() {
+                let max = 18;
+                let min = 10;
+                let minutosDecimalRandom =
+                    Math.floor(Math.random() * (max - min) + min) + 1;
+
+                minutosDecimalRandom = (minutosDecimalRandom / 10) * 3600;
+
+                function formatTime(seconds) {
+                    // Calculamos las horas y minutos
+                    let hours = Math.floor(seconds / 3600);
+                    let minutes = Math.floor((seconds % 3600) / 60);
+                    minutes = Math.round(minutes / 5) * 5;
+
+                    // Aseguramos que los valores tengan dos dígitos
+                    let formattedHours = hours.toString().padStart(2, "0");
+                    let formattedMinutes = minutes.toString().padStart(2, "0");
+
+                    // Formateamos en el formato hh:mm
+                    return `${formattedHours}:${formattedMinutes}`;
+                }
+
+                // Ejemplos de uso
+                let horaInicio = 7;
+                console.log(formatTime(minutosDecimalRandom));
+                console.log("Minutos " + formatTime(horaInicio * 3600));
+                console.log(
+                    "Horas sumadas : " +
+                        formatTime(minutosDecimalRandom + horaInicio * 3600)
+                );
             }
         </script>
     </body>
