@@ -23,6 +23,89 @@
         <a href="grifosTest.html">Ir a la Página 2</a>
 
 
+
+
+
+
+
+
+        <h2>Seleccione las actividades</h2>
+        <div>
+            <input type="checkbox" id="faena" onclick="toggleHorario('faena', 'FAENA')"> FAENA<br>
+            <input type="checkbox" id="despostada" onclick="toggleHorario('despostada', 'DESPOSTADA')"> DESPOSTADA<br>
+            <input type="checkbox" id="cuarteo" onclick="toggleHorario('cuarteo', 'CUARTEO')"> CUARTEO<br>
+            <input type="checkbox" id="saladero" onclick="toggleHorario('saladero', 'SALADERO')"> SALADERO<br>
+        </div>
+        
+        <div id="horarios"></div>
+        
+        <h2>Lista de Actividades</h2>
+        <ul id="lista-actividades"></ul>
+        
+        <script type="text/javascript">
+            function generateHourOptions() {
+                let options = '';
+                for (let i = 0; i < 24; i++) {
+                    options += `<option value="${i.toString().padStart(2, '0')}">${i.toString().padStart(2, '0')}</option>`;
+                }
+                return options;
+            }
+        
+            function generateMinuteOptions() {
+                let options = '';
+                for (let i = 0; i < 60; i += 5) { // Incremento de 5 minutos
+                    options += `<option value="${i.toString().padStart(2, '0')}">${i.toString().padStart(2, '0')}</option>`;
+                }
+                return options;
+            }
+        
+            function toggleHorario(id, name) {
+                const checkbox = document.getElementById(id);
+                const container = document.getElementById('horarios');
+                
+                if (checkbox.checked) {
+                    const div = document.createElement('div');
+                    div.className = 'horario';
+                    div.id = `horario-${id}`;
+                    div.innerHTML = `
+                        <h3>${name}</h3>
+                        <label for="inicio-${id}">Hora de Inicio:</label>
+                        <select id="inicio-${id}">${generateHourOptions()}</select>:<select id="inicio-min-${id}">${generateMinuteOptions()}</select>
+                        <br>
+                        <label for="fin-${id}">Hora de Finalización:</label>
+                        <select id="fin-${id}">${generateHourOptions()}</select>:<select id="fin-min-${id}">${generateMinuteOptions()}</select>
+                        <br>
+                        <button onclick="agregarActividad('${name}', 'inicio-${id}', 'inicio-min-${id}', 'fin-${id}', 'fin-min-${id}')">Agregar a la Lista</button>
+                    `;
+                    container.appendChild(div);
+                } else {
+                    const div = document.getElementById(`horario-${id}`);
+                    if (div) {
+                        container.removeChild(div);
+                    }
+                }
+            }
+        
+            function agregarActividad(name, inicioId, inicioMinId, finId, finMinId) {
+                const inicioHora = document.getElementById(inicioId).value;
+                const inicioMin = document.getElementById(inicioMinId).value;
+                const finHora = document.getElementById(finId).value;
+                const finMin = document.getElementById(finMinId).value;
+        
+                const lista = document.getElementById('lista-actividades');
+                const li = document.createElement('li');
+                li.textContent = `${name}: De ${inicioHora}:${inicioMin} a ${finHora}:${finMin}`;
+                lista.appendChild(li);
+            }
+        </script>
+
+
+
+
+
+
+
+
         <script type="text/javascript" src="jspdf.min.js"></script>
         <script type="text/javascript">
             function genPDF() {
@@ -83,3 +166,4 @@
         </script>
     </body>
 </html>
+
