@@ -19,7 +19,6 @@
 
         <a href="javascript:genPDF()">Crear pdf</a>
 
-        <div id="output"></div>
         <a href="grifosTest.html">Ir a la Página 2</a>
 
         <h2>Seleccione las actividades</h2>
@@ -55,28 +54,11 @@
         <h2>Lista de Actividades</h2>
         <ul id="lista-actividades"></ul>
 
+        <button onclick="generatePccActivities()">Generar actividades PCC</button>
+        <button onclick="generateRandomOrder()">Generar </button>
 
 
-
-        <button onclick="generateRandomOrder()">Generar orden aleatorio</button>
         <div id="output"></div>
-        
-        
-        <h2>Seleccionar Horario</h2>
-        
-        <label for="hour">Hora:</label>
-        <select id="hour"></select>
-        
-        <label for="minute">Minuto:</label>
-        <select id="minute"></select>
-        
-        <p>Horario seleccionado: <span id="selected-time"></span></p>
-        
-        <button onclick="showSelectedTime()">Mostrar Horario Seleccionado</button>
-
-
-
-
 
 
 
@@ -153,6 +135,8 @@
                 const finHora = document.getElementById(finId).value;
                 const finMin = document.getElementById(finMinId).value;
 
+
+
                 const tipoActividad = [];
                 if (document.getElementById(preoperacionalId).checked)
                     tipoActividad.push("Preoperacional");
@@ -166,7 +150,198 @@
                 )})`;
                 lista.appendChild(li);
             }
+        
+        
+        
+        <!-- </script>
+
+
+
+
+
+
+
+
+        <script type="text/javascript">-->
+
+
+            function formatTime(seconds) {
+                    // Calculamos las horas y minutos
+                    let hours = Math.floor(seconds / 3600);
+                    let minutes = Math.floor((seconds % 3600) / 60);
+                    minutes = Math.round(minutes / 5) * 5;
+
+                    // Aseguramos que los valores tengan dos dígitos
+                    let formattedHours = hours.toString().padStart(2, "0");
+                    let formattedMinutes = minutes.toString().padStart(2, "0");
+
+                    // Formateamos en el formato hh:mm
+                    return `${formattedHours}:${formattedMinutes}`;
+                }
+            function generatePccActivities() {
+                // Lista de elementos
+                let pcc = ["1B", "2B", "3F", "4B"];
+                let listaRegistros = [];
+                let horarios = [];
+                let registroTipo = [];
+
+                function transformArray(arr) {
+                    // Objeto para almacenar la primera aparición de cada elemento
+                    let firstOccurrences = {};
+
+                    // Array resultado
+                    let result = [];
+
+                    for (let i = 0; i < arr.length; i++) {
+                        let element = arr[i];
+
+                        if (firstOccurrences[element] === undefined) {
+                            // Si es la primera vez que aparece el elemento
+                            firstOccurrences[element] = i;
+                            result.push(1); // Añadimos 1 al resultado
+                        } else {
+                            // Si el elemento ya apareció antes
+                            let firstIndex = firstOccurrences[element];
+                            result.push(2); // Calculamos la diferencia de índices y añadimos al resultado
+                        }
+                    }
+
+                    return result;
+                }
+
+                // Agregar elemento al array aleatoriamente
+                let max = pcc.length;
+                let randomInt = Math.floor(Math.random() * max);
+                pcc.push(pcc[randomInt]);
+
+                // Ordenar aleatoriamente
+                pcc.sort(() => Math.random() - 0.5);
+
+                registroTipo = transformArray(pcc);
+
+                let textoAnexto = "16/07/2024" + "<br>";
+                let descripcion = "";
+
+
+
+
+                
+                const inicioHoraFaena = document.getElementById("inicio-faena").value;
+                const inicioMinFaena = document.getElementById("inicio-min-faena").value;
+                const finHoraFaena = document.getElementById("fin-faena").value;
+                const finMinFaena = document.getElementById("fin-min-faena").value;
+                console.log("Hora de inicio :" + inicioHoraFaena + ":" +inicioMinFaena);
+                // const inicioHoraDespostada = document.getElementById("inicio-despostada").value;
+                // const inicioMinDespostada = document.getElementById("inicio-min-despostada").value;
+                // const finHoraDespostada = document.getElementById("fin-despostada").value;
+                // const finMinDespostada = document.getElementById("fin-min-despostada").value;
+                // console.log("Hora de inicio :" + inicioHoraDespostada + ":" +inicioMinDespostada);
+
+
+                let inicioFaenaEnMinutos = (+inicioHoraFaena * 60) + +inicioMinFaena;
+                let actividadEnFAena = inicioFaenaEnMinutos;
+                for (let i = 0; i < pcc.length; i++) {
+                    switch (pcc[i]) {
+                        case "1B":
+                            descripcion = "10 medias reses";
+                            break;
+                        case "2B":
+                            descripcion = "Recorte bovino";
+                            break;
+                        case "3F":
+                            descripcion = "Producto Final";
+                            break;
+                        case "4B":
+                            descripcion = "Ácido lactico";
+                            break;
+                    }
+
+                    let planilla = new Object();
+                    planilla.pcc = pcc[i];
+                    planilla.hora = i + ":00";
+                    planilla.componente = registroTipo[i];
+                    planilla.descripcion = descripcion;
+
+                    listaRegistros.push(planilla);
+                }
+
+                for (let i = 0; i < pcc.length; i++) {
+                    //Generar numero del 0 al 1 y luego lo pasamos a minutos
+                    max = 1;
+                    randomInt = Math.floor(Math.random() * (max + 1));
+                    let minutosRandom = randomInt * 5;
+                    //Generar numero del 0 al 5 y luego lo pasamos a decimales de minutos
+                    max = 5;
+                    let minutosDecimalRandom = Math.floor(
+                        Math.random() * (max + 1)
+                    );
+
+
+                    //Generar número para las horas
+                    let inicioFaena = +inicioHoraFaena;
+                    let finFaena = +finHoraFaena; 
+                    let hsActividad = finFaena - inicioFaena;
+                    console.log("Cantidad de hs trabajadas" + hsActividad);
+                    console.log("Minutos de inicio de la faena "+ inicioFaenaEnMinutos);
+
+                    let horasRandom = Math.floor(
+                        Math.random() * (hsActividad) + inicioFaena
+                    );
+
+
+
+                    //Generar minutos
+                    let minMinutosEspaciado = (hsActividad/10) * 60;
+                    let maxMinutosEspaciado = (hsActividad/5) * 60;
+                    minutosDecimalRandom = Math.floor(Math.random() * (maxMinutosEspaciado - minMinutosEspaciado) + minMinutosEspaciado) + 1;
+                    let sumaInicioMasRandom = +inicioFaenaEnMinutos + +minutosDecimalRandom;
+                    let pasadoAHs = Math.floor(sumaInicioMasRandom / 60);
+                    let pasadoAminutos = sumaInicioMasRandom % 60;
+
+                    console.log("Segun lo que yo creo que esta bien este debería ser el horario " + pasadoAHs +":" + pasadoAminutos);
+                console.log(
+                    "Horas sumadas : " +
+                        formatTime(sumaInicioMasRandom * 60)
+                );
+
+
+
+
+
+
+
+                    let horarioGenerado =
+                        horasRandom +
+                        ":" +
+                        minutosDecimalRandom +
+                        minutosRandom;
+
+                    horarios.push(horarioGenerado);
+
+                    textoAnexto +=
+                        listaRegistros[i].pcc +
+                        "| " +
+                        horarioGenerado +
+                        " |" +
+                        listaRegistros[i].componente +
+                        "| " +
+                        listaRegistros[i].descripcion +
+                        " |" +
+                        " ✓ " +
+                        "<br>";
+                }
+
+                // Mostrar el resultado en el DOM
+                let outputDiv = document.getElementById("output");
+                outputDiv.innerHTML = textoAnexto;
+
+                // outputDiv.textContent = algo +'Orden aleatorio: ' + pcc.join(', ');
+            }
         </script>
+
+
+
+
 
         <script type="text/javascript" src="jspdf.min.js"></script>
         <script type="text/javascript">
@@ -195,17 +370,14 @@
                 let max = 11;
                 let randomInt = Math.floor(Math.random() * max);
                 let minutosRandom = randomInt * 5;
-                console.log(minutosRandom);
 
                 //Generar numero para las horas
                 let min = 7;
                 max = 15;
                 randomInt = Math.floor(Math.random() * (max - min) + min);
                 let horasRandom = randomInt * 5;
-                console.log(horasRandom);
 
                 let horarioGenerado = horasRandom + ":" + minutosRandom;
-                console.log(horarioGenerado);
 
                 // Añadir el mensaje y la fecha al PDF
                 doc.text(20, 20, "Fecha: " + fechaFormateada);
@@ -227,22 +399,7 @@
             }
         </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- 
         <script type="text/javascript">
             // Función para generar las opciones de hora
             function generateHourOptions() {
@@ -278,14 +435,15 @@
                 document.getElementById("selected-time").textContent =
                     hour + ":" + minute;
             }
-        </script>
+        </script>-->
 
         <script type="text/javascript">
             function generateRandomOrder() {
+                let horaInicio = 7;
                 let max = 18;
                 let min = 10;
-                let minutosDecimalRandom =
-                    Math.floor(Math.random() * (max - min) + min) + 1;
+
+                let minutosDecimalRandom = Math.floor(Math.random() * (max - min) + min) + 1;
 
                 minutosDecimalRandom = (minutosDecimalRandom / 10) * 3600;
 
@@ -304,14 +462,15 @@
                 }
 
                 // Ejemplos de uso
-                let horaInicio = 7;
-                console.log(formatTime(minutosDecimalRandom));
-                console.log("Minutos " + formatTime(horaInicio * 3600));
+
+                console.log(formatTime(minutosDecimalRandom) * 60);
                 console.log(
                     "Horas sumadas : " +
                         formatTime(minutosDecimalRandom + horaInicio * 3600)
                 );
             }
-        </script>
+        </script> 
+
+        
     </body>
 </html>
