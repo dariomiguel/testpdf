@@ -59,17 +59,24 @@ function generatePccActivities() {
     const inicioMinFaena = document.getElementById("inicio-min-faena").value;
     const finHoraFaena = document.getElementById("fin-faena").value;
     const finMinFaena = document.getElementById("fin-min-faena").value;
-    // const inicioHoraDespostada = document.getElementById("inicio-despostada").value;
-    // const inicioMinDespostada = document.getElementById("inicio-min-despostada").value;
-    // const finHoraDespostada = document.getElementById("fin-despostada").value;
-    // const finMinDespostada = document.getElementById("fin-min-despostada").value;
+    const inicioHoraDespostada = document.getElementById("inicio-despostada").value;
+    const inicioMinDespostada = document.getElementById("inicio-min-despostada").value;
+    const finHoraDespostada = document.getElementById("fin-despostada").value;
+    const finMinDespostada = document.getElementById("fin-min-despostada").value;
 
     let inicioFaenaEnMinutos = +inicioHoraFaena * 60 + +inicioMinFaena;
     let finFaenaEnMinutos = +finHoraFaena * 60 + +finMinFaena;
-    let totalTrabajadoEnMinutos = finFaenaEnMinutos - inicioFaenaEnMinutos;
-    let horarioActividadEnFAenaEnMinutos = inicioFaenaEnMinutos;
+    let totalTrabajadoEnMinutosFaena = finFaenaEnMinutos - inicioFaenaEnMinutos;
+    let horarioActividadEnFaenaEnMinutos = inicioFaenaEnMinutos;
+
+    let inicioDespostadaEnMinutos = +inicioHoraDespostada * 60 + +inicioMinDespostada;
+    let finDespostadaEnMinutos = +finHoraDespostada * 60 + +finMinDespostada;
+    let totalTrabajadoEnMinutosDespostada = finDespostadaEnMinutos - inicioDespostadaEnMinutos;
+    let horarioActividadEnDespostadaEnMinutos = inicioDespostadaEnMinutos;
 
     for (let i = 0; i < pcc.length; i++) {
+        let planilla = new Object();
+
         if (registroComponentes[i] != 1) {
             descripcion = "Registro";
         } else {
@@ -78,32 +85,51 @@ function generatePccActivities() {
                     // Cantidad de medias reses revisadas
                     min = 9;
                     max = 12;
+                    planilla.esFaena = true;
                     descripcion =
                         Math.floor(Math.random() * (max - min + 1)) + min + " medias reses";
                     break;
                 case "2B":
                     descripcion = "Recorte bovino";
+                    planilla.esFaena = false;
                     break;
                 case "3F":
                     descripcion = "Producto Final";
+                    planilla.esFaena = false;
                     break;
                 case "4B":
                     descripcion = "Ácido lactico";
+                    planilla.esFaena = true;
                     break;
             }
         }
 
         //Generamos los minutos máximos y mínimos para sumar a la última hora que se hizo el PCC o al inicio de actividades.
         //Mínimo = Una hora apróximadamente.
-        min = totalTrabajadoEnMinutos / 10;
+        min = totalTrabajadoEnMinutosFaena / 10;
         //Máximo = La cantidad de PCC a los que se van en el recorrido.
-        max = totalTrabajadoEnMinutos / +pcc.length;
+        max = totalTrabajadoEnMinutosFaena / +pcc.length;
         const espacioAleatoriosEntreRecorridos = Math.floor(Math.random() * (max - min + 1)) + min;
-        horarioActividadEnFAenaEnMinutos += espacioAleatoriosEntreRecorridos;
+        horarioActividadEnFaenaEnMinutos += espacioAleatoriosEntreRecorridos;
 
-        let planilla = new Object();
-        planilla.pcc = pcc[i];
-        planilla.hora = formatTime(horarioActividadEnFAenaEnMinutos);
+        if (planilla.esFaena) {
+            if (
+                horarioActividadEnFaenaEnMinutos >= 12 * 60 + 20 &&
+                horarioActividadEnFaenaEnMinutos <= 13 * 60
+            ) {
+                horarioActividadEnFaenaEnMinutos =
+                    12 * 60 - Math.floor(Math.random() * (15 - 5 + 1)) + 5;
+            }
+        } else {
+            if (
+                horarioActividadEnFaenaEnMinutos >= 13 * 60 &&
+                horarioActividadEnFaenaEnMinutos <= 14 * 60
+            ) {
+                horarioActividadEnFaenaEnMinutos -= Math.floor(Math.random() * (15 - 5 + 1)) + 5;
+            }
+        }
+
+        planilla.hora = formatTime(horarioActividadEnFaenaEnMinutos);
         planilla.componente = registroComponentes[i];
         planilla.descripcion = descripcion;
 
