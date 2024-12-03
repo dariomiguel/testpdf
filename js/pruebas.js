@@ -17,22 +17,22 @@ checkboxTimeDespostada.addEventListener("change", function () {
 
 const btnGenerar = document.getElementById("btnGenerar");
 btnGenerar.addEventListener("click", function () {
+    const pcc = [];
     if (checkboxTimeFaena.checked) {
-        console.log(
-            "Ingreso Faena: " +
-                convertirHoraAMinutosDelDia(ingresoFaena.value) +
-                " Salida Faena:" +
-                convertirHoraAMinutosDelDia(salidaFaena.value)
-        );
+        pcc.push("1B", "4B");
     }
     if (checkboxTimeDespostada.checked) {
-        console.log(
-            "Ingreso Despostada: " +
-                convertirHoraAMinutosDelDia(ingresoDespostada.value) +
-                " Salida Despostada:" +
-                convertirHoraAMinutosDelDia(salidaDespostada.value)
-        );
+        pcc.push("2B", "3F");
     }
+    console.log(pcc);
+
+    // Agregar elemento al array aleatoriamente
+    let randomInt = Math.floor(Math.random() * pcc.length);
+    pcc.push(pcc[randomInt]);
+    // Ordenar aleatoriamente
+    pcc.sort(() => Math.random() - 0.5);
+
+    console.log(pcc);
 });
 
 function convertirHoraAMinutosDelDia(tiempoEnHsYMinutos) {
