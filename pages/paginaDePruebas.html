@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Página de Pruebas</title>
+        <link rel="stylesheet" href="../style/index.css" />
+    </head>
+    <body>
+        <h1>Pruebas</h1>
+
+        <form action="#" class="formContainer">
+            <section>
+                <article>
+                    <h2>Faena</h2>
+                    <input type="checkbox" checked name="actividadEnFanea" id="actividadEnFanea" />
+                    <div class="timeContainer" id="timeContainerFaena">
+                        <label for="ingresoFaena">Hora de ingreso</label>
+                        <input type="time" value="07:00" name="ingresoFaena" id="ingresoFaena" />
+                        <label for="salidaFaena">Hora de salida</label>
+                        <input type="time" value="16:30" name="salidaFaena" id="salidaFaena" />
+                    </div>
+                </article>
+                <article>
+                    <h2>Despostada</h2>
+                    <input
+                        type="checkbox"
+                        name="actividadEnDespostada"
+                        id="actividadEnDespostada"
+                    />
+                    <div class="timeContainer" id="timeContainerDespostada">
+                        <label for="ingresoDespostada">Hora de ingreso</label>
+                        <input
+                            type="time"
+                            value="06:00"
+                            name="ingresoDespostada"
+                            id="ingresoDespostada"
+                        />
+                        <label for="salidaDespostada">Hora de salida</label>
+                        <input
+                            type="time"
+                            value="15:00"
+                            name="salidaDespostada"
+                            id="salidaDespostada"
+                        />
+                    </div>
+                </article>
+            </section>
+            <button type="submit" id="btnGenerar">Generar</button>
+        </form>
+
+        <footer><a href="../index.html">Voler al inicio</a></footer>
+        <script src="../js/pruebas.js"></script>
+    </body>
+</html>
