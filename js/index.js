@@ -129,7 +129,7 @@ function generatePccActivities() {
             }
         }
 
-        planilla.pcc = descripcion;
+        planilla.pcc = pcc[i];
         planilla.hora = formatTime(horarioActividadEnFaenaEnMinutos);
         planilla.componente = registroComponentes[i];
         planilla.descripcion = descripcion;
