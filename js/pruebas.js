@@ -125,6 +125,10 @@ function conventirMinutosAHoras(minutos) {
     let hs = Math.floor(minutos / 60); // Calcula las horas completas
     let min = minutos % 60; // Calcula los minutos restantes
 
+    // Formatear para asegurarse de que sean dos dígitos (por ejemplo, "01" en vez de "1")
+    hs = hs.toString().padStart(2, "0");
+    min = min.toString().padStart(2, "0");
+
     const horaConvertida = `${hs}:${min}`;
 
     return horaConvertida;
