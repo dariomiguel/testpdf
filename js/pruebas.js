@@ -22,7 +22,7 @@ const btnGenerar = document.getElementById("btnGenerar");
 btnGenerar.addEventListener("click", function () {
     const pcc = [];
     const listaRegistros = [];
-    let registroComponentes = [];
+    let registroComponentesDuplicados = [];
 
     if (checkboxTimeFaena.checked) {
         pcc.push("1B", "4B");
@@ -37,23 +37,26 @@ btnGenerar.addEventListener("click", function () {
     // Ordenar aleatoriamente
     pcc.sort(() => Math.random() - 0.5);
 
-    registroComponentes = arrayContadorDeDuplicados(pcc);
+    registroComponentesDuplicados = arrayContadorDeDuplicados(pcc);
 
     const ingresoFaenaEnMinutos = convertirHoraAMinutosDelDia(ingresoFaena);
     const salidaFaenaEnMinutos = convertirHoraAMinutosDelDia(salidaFaena);
+    const horarioAlmuerzoFaena = convertirHoraAMinutosDelDia("12:30");
+    const horarioFinAlmuerzoFaena = convertirHoraAMinutosDelDia("13:10");
     const ingresoDespostadaEnMinutos = convertirHoraAMinutosDelDia(ingresoDespostada);
     const salidaDespostadaEnMinutos = convertirHoraAMinutosDelDia(salidaDespostada);
+    const horarioAlmuerzoDespostada = convertirHoraAMinutosDelDia("13:00");
+    const horarioFinAlmuerzoDespostada = convertirHoraAMinutosDelDia("14:45");
 
     const totalMinutosTrabajadosEnFaena = salidaFaenaEnMinutos - ingresoFaenaEnMinutos;
-    const totalMinutosTrabajadosEnDespostada =
-        salidaDespostadaEnMinutos - ingresoDespostadaEnMinutos;
+    // const totalMinutosTrabajadosEnDespostada =        salidaDespostadaEnMinutos - ingresoDespostadaEnMinutos;
     let horarioActividadEnFaenaEnMinutos = ingresoFaenaEnMinutos;
-    let horarioActividadEnDespostadaEnMinutos = ingresoDespostadaEnMinutos;
+    // let horarioActividadEnDespostadaEnMinutos = ingresoDespostadaEnMinutos;
 
     for (let i = 0; i < pcc.length; i++) {
         let planilla = new Object();
 
-        if (registroComponentes[i] != 1) {
+        if (registroComponentesDuplicados[i] != 1) {
             descripcion = "Registro";
         } else {
             switch (pcc[i]) {
@@ -92,8 +95,36 @@ btnGenerar.addEventListener("click", function () {
 
         planilla.pcc = pcc[i];
         planilla.hora = conventirMinutosAHoras(horarioActividadEnFaenaEnMinutos);
-        planilla.componente = registroComponentes[i];
+        planilla.componente = registroComponentesDuplicados[i];
         planilla.descripcion = descripcion;
+
+        let entreHorarioMinimo = 0;
+        let entreHorarioMaximo = 0;
+        let horarioAleatiorio = 0;
+        const primerHorario = Math.random() < 0.5;
+        if (planilla.isFaena) {
+            if (primerHorario) {
+                entreHorarioMinimo = ingresoFaenaEnMinutos;
+                entreHorarioMaximo = horarioAlmuerzoFaena;
+            } else {
+                entreHorarioMinimo = horarioFinAlmuerzoFaena;
+                entreHorarioMaximo = SalidaFaenaEnMinutos;
+            }
+        } else {
+            if (primerHorario) {
+                entreHorarioMinimo = ingresoDespostadaEnMinutos;
+                entreHorarioMaximo = horarioAlmuerzoDespostada;
+            } else {
+                entreHorarioMinimo = horarioFinAlmuerzoDespostada;
+                entreHorarioMaximo = salidaDespostadaEnMinutos;
+            }
+        }
+
+        horarioAleatiorio =
+            Math.floor(Math.random() * (entreHorarioMaximo - entreHorarioMinimo + 1)) +
+            entreHorarioMinimo;
+
+        planilla.horarioNuevoAleatorio = conventirMinutosAHoras(horarioAleatiorio);
 
         listaRegistros.push(planilla);
     }
@@ -109,6 +140,8 @@ btnGenerar.addEventListener("click", function () {
             listaRegistros[i].descripcion +
             " |" +
             " ✓ " +
+            "\n" +
+            listaRegistros[i].horarioNuevoAleatorio +
             "\n";
     }
     console.log(textoAnexto);
