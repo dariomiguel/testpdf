@@ -41,23 +41,21 @@ btnGenerar.addEventListener("click", function () {
 
     const ingresoFaenaEnMinutos = convertirHoraAMinutosDelDia(ingresoFaena);
     const salidaFaenaEnMinutos = convertirHoraAMinutosDelDia(salidaFaena);
-    const horarioAlmuerzoFaena = convertirHoraAMinutosDelDia("12:30");
-    const horarioFinAlmuerzoFaena = convertirHoraAMinutosDelDia("13:10");
+    const horarioAlmuerzoFaena = convertirHoraAMinutosDelDia("12:00");
+    const horarioFinAlmuerzoFaena = convertirHoraAMinutosDelDia("12:30");
     const ingresoDespostadaEnMinutos = convertirHoraAMinutosDelDia(ingresoDespostada);
     const salidaDespostadaEnMinutos = convertirHoraAMinutosDelDia(salidaDespostada);
     const horarioAlmuerzoDespostada = convertirHoraAMinutosDelDia("13:00");
-    const horarioFinAlmuerzoDespostada = convertirHoraAMinutosDelDia("14:45");
+    const horarioFinAlmuerzoDespostada = convertirHoraAMinutosDelDia("13:45");
 
     const totalMinutosTrabajadosEnFaena = salidaFaenaEnMinutos - ingresoFaenaEnMinutos;
-    // const totalMinutosTrabajadosEnDespostada =        salidaDespostadaEnMinutos - ingresoDespostadaEnMinutos;
-    let horarioActividadEnFaenaEnMinutos = ingresoFaenaEnMinutos;
-    // let horarioActividadEnDespostadaEnMinutos = ingresoDespostadaEnMinutos;
 
     for (let i = 0; i < pcc.length; i++) {
         let planilla = new Object();
 
         if (registroComponentesDuplicados[i] != 1) {
             descripcion = "Registro";
+            planilla.retardoDesdeInicioActividad = 45;
         } else {
             switch (pcc[i]) {
                 case "1B":
@@ -65,36 +63,30 @@ btnGenerar.addEventListener("click", function () {
                     min = 9;
                     max = 12;
                     planilla.esFaena = true;
+                    planilla.retardoDesdeInicioActividad = 45;
                     descripcion =
                         Math.floor(Math.random() * (max - min + 1)) + min + " medias reses";
+
                     break;
                 case "2B":
                     descripcion = "Recorte bovino";
+                    planilla.retardoDesdeInicioActividad = 20;
                     planilla.esFaena = false;
                     break;
                 case "3F":
                     descripcion = "Producto Final";
+                    planilla.retardoDesdeInicioActividad = 20;
                     planilla.esFaena = false;
                     break;
                 case "4B":
-                    descripcion = "Ácido lactico";
+                    descripcion = "Ácido láctico";
+                    planilla.retardoDesdeInicioActividad = 45;
                     planilla.esFaena = true;
                     break;
             }
         }
 
-        //Generamos los minutos máximos y mínimos para sumar a la última hora que se hizo el PCC o al inicio de actividades.
-        //Mínimo = Una hora apróximadamente.
-        const minutosMinimos = totalMinutosTrabajadosEnFaena / 10;
-        //Máximo = La cantidad de PCC a los que se van en el recorrido.
-        const minutosMaximos = totalMinutosTrabajadosEnFaena / +pcc.length;
-
-        const espacioAleatoriosEntreRecorridos =
-            Math.floor(Math.random() * (minutosMaximos - minutosMinimos + 1)) + minutosMinimos;
-        horarioActividadEnFaenaEnMinutos += espacioAleatoriosEntreRecorridos;
-
         planilla.pcc = pcc[i];
-        planilla.hora = conventirMinutosAHoras(horarioActividadEnFaenaEnMinutos);
         planilla.componente = registroComponentesDuplicados[i];
         planilla.descripcion = descripcion;
 
@@ -102,13 +94,13 @@ btnGenerar.addEventListener("click", function () {
         let entreHorarioMaximo = 0;
         let horarioAleatiorio = 0;
         const primerHorario = Math.random() < 0.5;
-        if (planilla.isFaena) {
+        if (planilla.esFaena) {
             if (primerHorario) {
                 entreHorarioMinimo = ingresoFaenaEnMinutos;
                 entreHorarioMaximo = horarioAlmuerzoFaena;
             } else {
                 entreHorarioMinimo = horarioFinAlmuerzoFaena;
-                entreHorarioMaximo = SalidaFaenaEnMinutos;
+                entreHorarioMaximo = salidaFaenaEnMinutos;
             }
         } else {
             if (primerHorario) {
@@ -123,8 +115,21 @@ btnGenerar.addEventListener("click", function () {
         horarioAleatiorio =
             Math.floor(Math.random() * (entreHorarioMaximo - entreHorarioMinimo + 1)) +
             entreHorarioMinimo;
-
-        planilla.horarioNuevoAleatorio = conventirMinutosAHoras(horarioAleatiorio);
+        planilla.hora = conventirMinutosAHoras(
+            horarioAleatiorio + planilla.retardoDesdeInicioActividad
+        );
+        console.log(
+            "Mínimo: " +
+                entreHorarioMinimo +
+                "  Máximo: " +
+                entreHorarioMaximo +
+                "\n" +
+                "Número aleatorios: " +
+                horarioAleatiorio +
+                "\n" +
+                "En horas: " +
+                planilla.hora
+        );
 
         listaRegistros.push(planilla);
     }
@@ -140,8 +145,6 @@ btnGenerar.addEventListener("click", function () {
             listaRegistros[i].descripcion +
             " |" +
             " ✓ " +
-            "\n" +
-            listaRegistros[i].horarioNuevoAleatorio +
             "\n";
     }
     console.log(textoAnexto);
