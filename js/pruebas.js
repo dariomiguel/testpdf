@@ -114,24 +114,41 @@ btnGenerar.addEventListener("click", function () {
             }
         }
 
-        horarioAleatiorio =
-            Math.floor(Math.random() * (entreHorarioMaximo - entreHorarioMinimo + 1)) +
-            entreHorarioMinimo;
-        planilla.hora = conventirMinutosAHoras(
-            horarioAleatiorio + planilla.retardoDesdeInicioActividad
-        );
-        console.log(
-            "Mínimo: " +
+        let condicionWhile = true;
+        let intentos = 0;
+        do {
+            intentos++;
+            horarioAleatiorio =
+                Math.floor(Math.random() * (entreHorarioMaximo - entreHorarioMinimo + 1)) +
                 entreHorarioMinimo +
-                "  Máximo: " +
-                entreHorarioMaximo +
-                "\n" +
-                "Número aleatorios: " +
-                horarioAleatiorio +
-                "\n" +
-                "En horas: " +
-                planilla.hora
-        );
+                planilla.retardoDesdeInicioActividad;
+
+            planilla.hora = conventirMinutosAHoras(horarioAleatiorio);
+
+            condicionWhile = listaRegistros.some((registro) => {
+                return (
+                    convertirHoraAMinutosDelDia(registro.hora) <= +horarioAleatiorio + 5 &&
+                    convertirHoraAMinutosDelDia(registro.hora) >= +horarioAleatiorio - 5
+                );
+            });
+            if (intentos >= 2) {
+                console.log("Se alcanzó el máximo de intentos. Fin de la generación.");
+                break;
+            }
+        } while (condicionWhile);
+
+        // console.log(
+        //     "Mínimo: " +
+        //         entreHorarioMinimo +
+        //         "  Máximo: " +
+        //         entreHorarioMaximo +
+        //         "\n" +
+        //         "Número aleatorios: " +
+        //         horarioAleatiorio +
+        //         "\n" +
+        //         "En horas: " +
+        //         planilla.hora
+        // );
 
         listaRegistros.push(planilla);
     }
