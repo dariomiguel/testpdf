@@ -94,6 +94,7 @@ btnGenerar.addEventListener("click", function () {
         let entreHorarioMaximo = 0;
         let horarioAleatiorio = 0;
 
+        //Si es registro siempre se ve por la tarde
         const primerHorario = registroComponentesDuplicados[i] == 2 ? false : Math.random() < 0.5;
         if (planilla.esFaena) {
             if (primerHorario) {
@@ -134,6 +135,9 @@ btnGenerar.addEventListener("click", function () {
 
         listaRegistros.push(planilla);
     }
+    listaRegistros.sort(
+        (a, b) => convertirHoraAMinutosDelDia(a.hora) - convertirHoraAMinutosDelDia(b.hora)
+    );
     let textoAnexto = "";
     for (let i = 0; i < pcc.length; i++) {
         textoAnexto +=
