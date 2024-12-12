@@ -126,12 +126,21 @@ btnGenerar.addEventListener("click", function () {
             planilla.hora = conventirMinutosAHoras(horarioAleatiorio);
 
             condicionWhile = listaRegistros.some((registro) => {
-                return (
-                    convertirHoraAMinutosDelDia(registro.hora) <= +horarioAleatiorio + 5 &&
-                    convertirHoraAMinutosDelDia(registro.hora) >= +horarioAleatiorio - 5
-                );
+                if (registro.esFaena == planilla.esFaena) {
+                    return (
+                        convertirHoraAMinutosDelDia(registro.hora) <= +horarioAleatiorio + 5 &&
+                        convertirHoraAMinutosDelDia(registro.hora) >= +horarioAleatiorio - 5
+                    );
+                } else {
+                    return (
+                        convertirHoraAMinutosDelDia(registro.hora) <= +horarioAleatiorio + 10 &&
+                        convertirHoraAMinutosDelDia(registro.hora) >= +horarioAleatiorio - 10
+                    );
+                }
             });
-            if (intentos >= 2) {
+
+            //Intentos de generación antes de que salte el error
+            if (intentos >= 100) {
                 console.log("Se alcanzó el máximo de intentos. Fin de la generación.");
                 break;
             }
