@@ -55,7 +55,7 @@ btnGenerar.addEventListener("click", function () {
 
         if (registroComponentesDuplicados[i] != 1) {
             descripcion = "Registro";
-            planilla.retardoDesdeInicioActividad = 45;
+            planilla.retardoDesdeInicioActividad = 15;
         } else {
             switch (pcc[i]) {
                 case "1B":
@@ -93,7 +93,8 @@ btnGenerar.addEventListener("click", function () {
         let entreHorarioMinimo = 0;
         let entreHorarioMaximo = 0;
         let horarioAleatiorio = 0;
-        const primerHorario = Math.random() < 0.5;
+
+        const primerHorario = registroComponentesDuplicados[i] == 2 ? false : Math.random() < 0.5;
         if (planilla.esFaena) {
             if (primerHorario) {
                 entreHorarioMinimo = ingresoFaenaEnMinutos;
