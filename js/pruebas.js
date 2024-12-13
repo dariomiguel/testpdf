@@ -205,6 +205,8 @@ btnGenerar.addEventListener("click", function () {
     }
 
     const listaValidadorDeHorarios = [];
+    const listaHorariospuntos = [];
+
     for (let i = 0; i < listaRegistros.length; i++) {
         const horarioActual = convertirHoraAMinutosDelDia(listaRegistros[i].hora);
 
@@ -215,6 +217,7 @@ btnGenerar.addEventListener("click", function () {
         }
     }
 
+    //Buscador de cambios por almuerzo
     let posicionCambio = -1; // Indicador de que no se encontró ningún cambio
     for (let i = 1; i < listaValidadorDeHorarios.length; i++) {
         if (listaValidadorDeHorarios[i - 1] === true && listaValidadorDeHorarios[i] === false) {
