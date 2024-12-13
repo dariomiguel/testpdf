@@ -48,7 +48,10 @@ btnGenerar.addEventListener("click", function () {
     const horarioAlmuerzoDespostadaEnMinutos = convertirHoraAMinutosDelDia("13:00");
     const horarioFinAlmuerzoDespostadaEnMinutos = convertirHoraAMinutosDelDia("13:45");
 
-    const totalMinutosTrabajadosEnFaena = salidaFaenaEnMinutos - inicioFaenaEnMinutos;
+    //Verificación si hay almuerzo
+    const huboAlmuerzoEnFaena = salidaFaenaEnMinutos > convertirHoraAMinutosDelDia("14:00");
+    const huboAlmuerzoEnDespostada =
+        salidaDespostadaEnMinutos > convertirHoraAMinutosDelDia("14:00");
 
     for (let i = 0; i < pcc.length; i++) {
         let planilla = new Object();
@@ -96,24 +99,37 @@ btnGenerar.addEventListener("click", function () {
 
         //Si es registro siempre se ve por la tarde
         const primerHorario = registroComponentesDuplicados[i] == 2 ? false : Math.random() < 0.5;
+
+        //Límites para generación de horarios
         if (planilla.esFaena) {
-            if (primerHorario) {
-                entreHorarioMinimo = inicioFaenaEnMinutos;
-                entreHorarioMaximo = horarioAlmuerzoFaenaEnMinutos;
+            if (huboAlmuerzoEnFaena) {
+                if (primerHorario) {
+                    entreHorarioMinimo = inicioFaenaEnMinutos;
+                    entreHorarioMaximo = horarioAlmuerzoFaenaEnMinutos;
+                } else {
+                    entreHorarioMinimo = horarioFinAlmuerzoFaenaEnMinutos;
+                    entreHorarioMaximo = salidaFaenaEnMinutos;
+                }
             } else {
-                entreHorarioMinimo = horarioFinAlmuerzoFaenaEnMinutos;
+                entreHorarioMinimo = inicioFaenaEnMinutos;
                 entreHorarioMaximo = salidaFaenaEnMinutos;
             }
         } else {
-            if (primerHorario) {
-                entreHorarioMinimo = inicioDespostadaEnMinutos;
-                entreHorarioMaximo = horarioAlmuerzoDespostadaEnMinutos;
+            if (huboAlmuerzoEnDespostada) {
+                if (primerHorario) {
+                    entreHorarioMinimo = inicioDespostadaEnMinutos;
+                    entreHorarioMaximo = horarioAlmuerzoDespostadaEnMinutos;
+                } else {
+                    entreHorarioMinimo = horarioFinAlmuerzoDespostadaEnMinutos;
+                    entreHorarioMaximo = salidaDespostadaEnMinutos;
+                }
             } else {
-                entreHorarioMinimo = horarioFinAlmuerzoDespostadaEnMinutos;
+                entreHorarioMinimo = inicioDespostadaEnMinutos;
                 entreHorarioMaximo = salidaDespostadaEnMinutos;
             }
         }
 
+        //Generación de horarios aleatorios
         let condicionWhile = true;
         let intentos = 0;
         do {
@@ -209,15 +225,20 @@ btnGenerar.addEventListener("click", function () {
 
     //Verificación si hubo almuerzo, lo que hace un corte en los horarios
     if (posicionCambio !== -1) {
-        if (listaRegistros[posicionCambio - 1].esFaena) {
-            console.log("Almuerzo faena: " + horarioAlmuerzoFaenaEnMinutos);
-        } else {
-            console.log("Almuerzo despostada: " + horarioAlmuerzoDespostadaEnMinutos);
+        if (huboAlmuerzoEnFaena) {
+            if (listaRegistros[posicionCambio - 1].esFaena) {
+                console.log("Almuerzo faena: " + horarioAlmuerzoFaenaEnMinutos);
+            } else {
+                console.log("Almuerzo despostada: " + horarioAlmuerzoDespostadaEnMinutos);
+            }
         }
-        if (listaRegistros[posicionCambio].esFaena) {
-            console.log("Fin almuerzo faena: " + horarioFinAlmuerzoFaenaEnMinutos);
-        } else {
-            console.log("Fin almuerzo despostada: " + horarioFinAlmuerzoDespostadaEnMinutos);
+
+        if (huboAlmuerzoEnDespostada) {
+            if (listaRegistros[posicionCambio].esFaena) {
+                console.log("Fin almuerzo faena: " + horarioFinAlmuerzoFaenaEnMinutos);
+            } else {
+                console.log("Fin almuerzo despostada: " + horarioFinAlmuerzoDespostadaEnMinutos);
+            }
         }
     } else {
         console.log("No hubo almuerzo en el día.");
