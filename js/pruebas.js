@@ -3,10 +3,10 @@ const checkboxTimeDespostada = document.getElementById("actividadEnDespostada");
 const timeContainerFaena = document.getElementById("timeContainerFaena");
 const timeContainerDespostada = document.getElementById("timeContainerDespostada");
 
-const ingresoFaena = document.getElementById("ingresoFaena").value;
-const salidaFaena = document.getElementById("salidaFaena").value;
-const ingresoDespostada = document.getElementById("ingresoDespostada").value;
-const salidaDespostada = document.getElementById("salidaDespostada").value;
+const ingresoFaena = document.getElementById("ingresoFaena");
+const salidaFaena = document.getElementById("salidaFaena");
+const ingresoDespostada = document.getElementById("ingresoDespostada");
+const salidaDespostada = document.getElementById("salidaDespostada");
 
 checkboxTimeFaena.addEventListener("change", function () {
     ingresoFaena.disabled = !checkboxTimeFaena.checked;
@@ -39,16 +39,16 @@ btnGenerar.addEventListener("click", function () {
 
     registroComponentesDuplicados = arrayContadorDeDuplicados(pcc);
 
-    const ingresoFaenaEnMinutos = convertirHoraAMinutosDelDia(ingresoFaena);
-    const salidaFaenaEnMinutos = convertirHoraAMinutosDelDia(salidaFaena);
-    const horarioAlmuerzoFaena = convertirHoraAMinutosDelDia("12:00");
-    const horarioFinAlmuerzoFaena = convertirHoraAMinutosDelDia("12:30");
-    const ingresoDespostadaEnMinutos = convertirHoraAMinutosDelDia(ingresoDespostada);
-    const salidaDespostadaEnMinutos = convertirHoraAMinutosDelDia(salidaDespostada);
-    const horarioAlmuerzoDespostada = convertirHoraAMinutosDelDia("13:00");
-    const horarioFinAlmuerzoDespostada = convertirHoraAMinutosDelDia("13:45");
+    const inicioFaenaEnMinutos = convertirHoraAMinutosDelDia(ingresoFaena.value);
+    const salidaFaenaEnMinutos = convertirHoraAMinutosDelDia(salidaFaena.value);
+    const horarioAlmuerzoFaenaEnMinutos = convertirHoraAMinutosDelDia("12:00");
+    const horarioFinAlmuerzoFaenaEnMinutos = convertirHoraAMinutosDelDia("12:30");
+    const inicioDespostadaEnMinutos = convertirHoraAMinutosDelDia(ingresoDespostada.value);
+    const salidaDespostadaEnMinutos = convertirHoraAMinutosDelDia(salidaDespostada.value);
+    const horarioAlmuerzoDespostadaEnMinutos = convertirHoraAMinutosDelDia("13:00");
+    const horarioFinAlmuerzoDespostadaEnMinutos = convertirHoraAMinutosDelDia("13:45");
 
-    const totalMinutosTrabajadosEnFaena = salidaFaenaEnMinutos - ingresoFaenaEnMinutos;
+    const totalMinutosTrabajadosEnFaena = salidaFaenaEnMinutos - inicioFaenaEnMinutos;
 
     for (let i = 0; i < pcc.length; i++) {
         let planilla = new Object();
@@ -98,18 +98,18 @@ btnGenerar.addEventListener("click", function () {
         const primerHorario = registroComponentesDuplicados[i] == 2 ? false : Math.random() < 0.5;
         if (planilla.esFaena) {
             if (primerHorario) {
-                entreHorarioMinimo = ingresoFaenaEnMinutos;
-                entreHorarioMaximo = horarioAlmuerzoFaena;
+                entreHorarioMinimo = inicioFaenaEnMinutos;
+                entreHorarioMaximo = horarioAlmuerzoFaenaEnMinutos;
             } else {
-                entreHorarioMinimo = horarioFinAlmuerzoFaena;
+                entreHorarioMinimo = horarioFinAlmuerzoFaenaEnMinutos;
                 entreHorarioMaximo = salidaFaenaEnMinutos;
             }
         } else {
             if (primerHorario) {
-                entreHorarioMinimo = ingresoDespostadaEnMinutos;
-                entreHorarioMaximo = horarioAlmuerzoDespostada;
+                entreHorarioMinimo = inicioDespostadaEnMinutos;
+                entreHorarioMaximo = horarioAlmuerzoDespostadaEnMinutos;
             } else {
-                entreHorarioMinimo = horarioFinAlmuerzoDespostada;
+                entreHorarioMinimo = horarioFinAlmuerzoDespostadaEnMinutos;
                 entreHorarioMaximo = salidaDespostadaEnMinutos;
             }
         }
@@ -179,6 +179,58 @@ btnGenerar.addEventListener("click", function () {
             "\n";
     }
     console.log(textoAnexto);
+
+    // const primerHorarioFaena = Math.random() < 0.5;
+
+    if (listaRegistros[0].esFaena) {
+        console.log("Hora de inicio faena: " + inicioFaenaEnMinutos);
+    } else {
+        console.log("Hora de inicio despostada: " + inicioDespostadaEnMinutos);
+    }
+
+    const listaValidadorDeHorarios = [];
+    for (let i = 0; i < listaRegistros.length; i++) {
+        const horarioActual = convertirHoraAMinutosDelDia(listaRegistros[i].hora);
+
+        if (listaRegistros[i].esFaena) {
+            listaValidadorDeHorarios.push(horarioActual < horarioAlmuerzoFaenaEnMinutos);
+        } else {
+            listaValidadorDeHorarios.push(horarioActual < horarioAlmuerzoDespostadaEnMinutos);
+        }
+    }
+
+    let posicionCambio = -1; // Indicador de que no se encontró ningún cambio
+    for (let i = 1; i < listaValidadorDeHorarios.length; i++) {
+        if (listaValidadorDeHorarios[i - 1] === true && listaValidadorDeHorarios[i] === false) {
+            posicionCambio = i;
+            break; // Detener el bucle en el primer cambio
+        }
+    }
+
+    //Verificación si hubo almuerzo, lo que hace un corte en los horarios
+    if (posicionCambio !== -1) {
+        if (listaRegistros[posicionCambio - 1].esFaena) {
+            console.log("Almuerzo faena: " + horarioAlmuerzoFaenaEnMinutos);
+        } else {
+            console.log("Almuerzo despostada: " + horarioAlmuerzoDespostadaEnMinutos);
+        }
+        if (listaRegistros[posicionCambio].esFaena) {
+            console.log("Fin almuerzo faena: " + horarioFinAlmuerzoFaenaEnMinutos);
+        } else {
+            console.log("Fin almuerzo despostada: " + horarioFinAlmuerzoDespostadaEnMinutos);
+        }
+    } else {
+        console.log("No hubo almuerzo en el día.");
+    }
+
+    if (listaRegistros[listaRegistros.length - 1].esFaena) {
+        console.log("Hora de fin faena: " + salidaFaenaEnMinutos);
+    } else {
+        console.log("Hora de fin despostada: " + salidaDespostadaEnMinutos);
+    }
+    // if (primerHorarioFaena) {
+    // } else {
+    // }
 });
 
 function convertirHoraAMinutosDelDia(tiempoEnHsYMinutos) {
