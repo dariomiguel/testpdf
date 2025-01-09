@@ -277,5 +277,6 @@ fetch("../db/grifos.json")
     .then((response) => response.json())
     .then((data) => {
         grifosData = data;
+        console.log("Data es: " + grifosData);
         const sectores = [...new Set(data.map((grifo) => grifo.sector))];
     });
