@@ -269,3 +269,13 @@ function generateRandomOrder() {
         return `${formattedHours}:${formattedMinutes}`;
     }
 }
+
+let grifosData = [];
+
+// Cargar el archivo JSON y generar la interfaz
+fetch("../db/grifos.json")
+    .then((response) => response.json())
+    .then((data) => {
+        grifosData = data;
+        const sectores = [...new Set(data.map((grifo) => grifo.sector))];
+    });
