@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0" version="27.0.6">
   <diagram name="Página-1" id="CXLRczj3fuokDcTAWvKy">
-    <mxGraphModel dx="1303" dy="683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3756" dy="1384" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -37,7 +37,7 @@
         <mxCell id="NYzse5_KyK6MXLnURTMC-108" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;startFill=0;endArrow=none;" edge="1" parent="1" source="NYzse5_KyK6MXLnURTMC-7" target="NYzse5_KyK6MXLnURTMC-100">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NYzse5_KyK6MXLnURTMC-7" value="Productos" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="NYzse5_KyK6MXLnURTMC-7" value="producto" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="260" y="610" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="NYzse5_KyK6MXLnURTMC-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;startFill=0;" edge="1" parent="1" source="NYzse5_KyK6MXLnURTMC-10" target="NYzse5_KyK6MXLnURTMC-29">
@@ -58,7 +58,7 @@
         <mxCell id="NYzse5_KyK6MXLnURTMC-19" value="&lt;u&gt;Cod_producto&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="560" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NYzse5_KyK6MXLnURTMC-23" value="Antigüedad" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="NYzse5_KyK6MXLnURTMC-23" value="Antigüedad_vino" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="20" y="760" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="NYzse5_KyK6MXLnURTMC-25" value="&lt;u&gt;Cod_ grad&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -76,7 +76,7 @@
         <mxCell id="NYzse5_KyK6MXLnURTMC-31" value="Graduacion" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="590" y="760" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NYzse5_KyK6MXLnURTMC-40" value="grado" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="NYzse5_KyK6MXLnURTMC-40" value="grado_vino" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="700" y="710" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="NYzse5_KyK6MXLnURTMC-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.333;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="NYzse5_KyK6MXLnURTMC-31" target="NYzse5_KyK6MXLnURTMC-25">
@@ -103,7 +103,7 @@
         <mxCell id="NYzse5_KyK6MXLnURTMC-87" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;startFill=0;endArrow=none;" edge="1" parent="1" source="NYzse5_KyK6MXLnURTMC-51" target="NYzse5_KyK6MXLnURTMC-52">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NYzse5_KyK6MXLnURTMC-51" value="Sustancias Orgánicas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="NYzse5_KyK6MXLnURTMC-51" value="sustancia_organica" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="260" y="485" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="NYzse5_KyK6MXLnURTMC-52" value="&lt;u&gt;Cod_Sust_Org&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -127,7 +127,7 @@
         <mxCell id="NYzse5_KyK6MXLnURTMC-116" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;startFill=0;endArrow=none;" edge="1" parent="1" source="NYzse5_KyK6MXLnURTMC-65" target="NYzse5_KyK6MXLnURTMC-112">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NYzse5_KyK6MXLnURTMC-65" value="Proveedor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="NYzse5_KyK6MXLnURTMC-65" value="proveedor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="260" y="320" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="NYzse5_KyK6MXLnURTMC-79" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;startFill=0;endArrow=none;" edge="1" parent="1" source="NYzse5_KyK6MXLnURTMC-66" target="NYzse5_KyK6MXLnURTMC-65">
@@ -136,11 +136,11 @@
         <mxCell id="NYzse5_KyK6MXLnURTMC-66" value="&lt;u&gt;Cod_provedor&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="285" y="220" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NYzse5_KyK6MXLnURTMC-67" value="cuit" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="NYzse5_KyK6MXLnURTMC-67" value="cuit_proveedor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="10" y="300" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NYzse5_KyK6MXLnURTMC-68" value="razon_social" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="350" width="90" height="40" as="geometry" />
+        <mxCell id="NYzse5_KyK6MXLnURTMC-68" value="razon_social_&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;proveedor&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="350" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="NYzse5_KyK6MXLnURTMC-75" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;endArrow=none;startFill=0;" edge="1" parent="1" source="NYzse5_KyK6MXLnURTMC-69" target="NYzse5_KyK6MXLnURTMC-74">
           <mxGeometry relative="1" as="geometry" />
@@ -151,10 +151,10 @@
         <mxCell id="NYzse5_KyK6MXLnURTMC-78" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;startFill=0;endArrow=none;" edge="1" parent="1" source="NYzse5_KyK6MXLnURTMC-69" target="NYzse5_KyK6MXLnURTMC-65">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NYzse5_KyK6MXLnURTMC-69" value="direccion" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="175" y="250" width="90" height="40" as="geometry" />
+        <mxCell id="NYzse5_KyK6MXLnURTMC-69" value="direccion_proveedor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="175" y="250" width="115" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NYzse5_KyK6MXLnURTMC-70" value="telefono_contacto" style="ellipse;whiteSpace=wrap;html=1;strokeColor=default;perimeterSpacing=8;" vertex="1" parent="1">
+        <mxCell id="NYzse5_KyK6MXLnURTMC-70" value="telefono_proveedor" style="ellipse;whiteSpace=wrap;html=1;strokeColor=default;perimeterSpacing=8;" vertex="1" parent="1">
           <mxGeometry x="150" y="380" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="NYzse5_KyK6MXLnURTMC-71" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
@@ -247,7 +247,7 @@
         <mxCell id="NYzse5_KyK6MXLnURTMC-129" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;startFill=0;endArrow=none;" edge="1" parent="1" source="NYzse5_KyK6MXLnURTMC-115" target="NYzse5_KyK6MXLnURTMC-128">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NYzse5_KyK6MXLnURTMC-115" value="Provincia" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="NYzse5_KyK6MXLnURTMC-115" value="provincia" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="510" y="320" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="NYzse5_KyK6MXLnURTMC-118" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
